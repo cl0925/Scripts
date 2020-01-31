@@ -5,7 +5,7 @@ const path3 = "tv_series/index?appChannel";
 let obj = JSON.parse($response.body);
 
 if (url.indexOf(path1) != -1) {
-  // 去广告
+  // 去广告/
   delete obj["data"]["vipArticle"];
   delete obj["data"]["bannerList"];
   obj["data"]["iconList"] = obj["data"]["iconList"].filter(i => {
